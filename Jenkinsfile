@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage("Setup"){
       steps {
-        echo "Hello java code"
+        echo "Hello new branch docker"
         sh "uptime"
       }
     }
