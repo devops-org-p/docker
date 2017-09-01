@@ -1,0 +1,17 @@
+pipeline {
+  agent any
+
+  stages {
+    stage("Setup"){
+      steps {
+        echo "Hello java code"
+        sh "uptime"
+      }
+    }
+    stage("Configure"){
+      steps {
+        sh "cp Jenkinsfile code.java"
+      }
+    }
+  }
+}
